@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Number Base Converter</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cont">
+    <h3>Number Base Converter</h3>
+    <div class="write">
+  <input id="num" type="number" onkeyup="log()" onblur="log()" placeholder="Enter Number Here..">
+  <select id="from" onchange="log()">
+    <option class="from" value="2">binary</option> 
+  <option class="from" value="8">octal</option>
+  <option class="from" value="10">decimal</option> 
+  <option class="from" value="16">hexadecimal</option>
+  </select>
+    </div>
+  <div class="write">
+  <input id="inpshow" readonly placeholder="Result Will Shown Here..">
+  <select id="to" onchange="log()">
+    <option value="2" class="to">binary</option>
+    <option class="to" value="8">octal</option>
+    <option class="to" value="10">decimal</option>
+    <option class="to" value="16">hexadecimal</option>
+  </select>
+  </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

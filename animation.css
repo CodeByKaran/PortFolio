@@ -1,0 +1,51 @@
+@keyframes go {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(-35vh);
+        opacity: 0.70;
+        scale: 0.7 0.7;
+    }
+    50%{
+        transform: translateY(-44vh);
+        scale: 1.3 1.3;
+    }
+    75%{
+        transform: translateY(-18vh);
+        scale: 1 1;
+    }
+    100%{
+        transform: translateY(0vh);
+        opacity: 0.30;
+    }
+}
+
+@keyframes come {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(45vh);
+        opacity: 0.80;
+        scale: 0.7 0.7;
+    }
+    100%{
+        transform: translateY(-120vh);
+        opacity: 0.30;
+      
+    }
+}
+
+img:nth-child(2){
+    animation-delay: 2s;
+}
+img:nth-child(3){
+    animation-delay: 4s;
+}
+img:nth-child(4){
+    animation-delay: 6s;
+}
+img:nth-child(5){
+    animation-delay: 8s;
+}

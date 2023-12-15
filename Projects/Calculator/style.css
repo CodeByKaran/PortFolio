@@ -1,0 +1,173 @@
+body {
+    font-size: 15pt;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(120deg,yellow,whitesmoke,lightcyan,lime);
+    
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+#del{
+  font-size: 17px;
+  font-weight: 500;
+
+}
+.cont{
+  height: 60vh;
+  width: 85vw;
+  max-height: 60vh;
+  max-width: 85vw;
+ margin: auto auto;
+ position: relative;
+ 
+}
+.cont::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  border: 0.1px solid #363636;
+  background: rgba(0,0,0,0.120);
+  filter: blur(0.5px);
+  top: 0;
+  left: 0;
+}
+.grid{
+display: flex;
+flex-direction: column;
+position: absolute;
+bottom: 5px;
+left: 5px;
+}
+.grid div button{
+  min-height: 65px;
+  min-width: 75px;
+  max-height: 65;
+  max-width: 75px;
+  font-size: 17px;
+  border-radius: 25%;
+  text-align: center;
+  border: none;
+  margin: 3px;
+}
+.cal{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cal button{
+  min-height: 65px;
+  min-width: 65px;
+  border-radius: 25%;
+  font-weight: 900;
+  font-size: 20px;
+  border: none;
+  margin: 3px;
+}
+.op{
+  height: 90px;
+  width: 75vw;
+  display: flex;
+  
+  align-items: center;
+  position: absolute;
+  top: 50px;
+}
+.op button{
+ height: 60px;
+ width: 60px;
+ border: none;
+ border-radius: 20%;
+ margin: 9px;
+}
+.screen{
+  position: relative;
+  height: 70px;
+  width: 95%;
+  margin: 20px auto 0px auto;
+  display: flex;
+  font-size: 21px;
+  color: #494949;
+  flex-direction: column;
+  letter-spacing: 1px;
+  font-weight: 400 !important;
+  transition: all 0.3s;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #38383817;
+  box-shadow: 0px 0px 1px #545454;
+  border-radius: 9px;
+  padding: 4px;
+  overflow: hidden;
+}
+button{
+  transition: 0.3s;
+  font-size: 15px ;
+  background-color: transparent;
+  color: #323232 !important;
+  border: 1px solid ghostwhite !important;
+}
+button:focus{
+-webkit-animation: my 0.3s ease-out 1;
+-o-animation: my 0.3s ease-out 1;
+animation: my 0.3s ease-out 1;
+}
+@keyframes my{
+  0%{
+     scale: 1 1;
+  }
+  50%{
+    scale: 0.9 0.9;
+  }
+  100%{
+    scale: 1 1;
+  }
+}
+
+.div{
+  margin-top: 3px;
+  font-size: 24px;
+  color: #FFA600;
+}
+button:hover{
+  color: #000000 !important;
+   
+}
+#font{
+  font-weight: 900;
+  text-align: center;
+}
+#bg{
+  font-weight: 500;
+}
+.inpScreen{
+  background: transparent;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color:  #494949;
+  display: flex;
+  justify-content: end;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+@media only screen and (min-width:700px) {
+  body{
+    background-color: red;
+  }
+  .cont{
+   min-height: 80vh !important;
+    width: 26vw !important;
+  }
+}

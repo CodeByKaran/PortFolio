@@ -1,0 +1,118 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+}
+.Box{
+  background: linear-gradient(120deg,#676984,#2A2C44,#232435);
+  padding: 12px 12px 18px 12px;
+  text-align: center;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+}
+.Box h2{
+  padding: 4px;
+  color: #FF5C05;
+}
+.Box .input,.add{
+  padding: 9px 4px 9px 4px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: lightcyan;
+  box-shadow: 0px 0px 6px #ccc;
+  transition: 0.4s;
+}
+::placeholder{
+  color: black;
+}
+.input:focus{
+
+box-shadow: 0px 0px 2px 4px #7ED0DA;
+  
+}
+.add{
+  width: 90px;
+  background: orange ;
+  color: black ;
+  font-weight: 500;
+}
+.ul{
+  text-align: start;
+
+  width: 90vw;
+  margin: 3px auto;
+
+}
+.ul li{
+  list-style: none;
+  font-size: 16px;
+  position: relative;
+  transition: 0.4s;
+  color: #3D4343;
+  font-weight: 700;
+  padding: 9px 30px;
+  text-align: justify;
+  background: linear-gradient(12deg,#B2DEE4,#63D2DF,#24D2E6);
+  border-radius: 5px;
+  margin: 4px 0px;
+}
+.close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 500 ;
+  color: #3D4343 ;
+  font-size: 17px;
+  
+  height: 100%;
+
+  padding: 9px 9px;
+  text-align: center;
+}
+
+ul li.check{
+  background: linear-gradient(12deg,#24D2E6,#02E5FF);
+  text-decoration: line-through;
+ color: lightcyan;
+  
+}
+ul li.check::before{
+  content: "";
+  position: absolute;
+  border-style:solid;
+  border-color: white;
+  border-width: 0px 3px 3px 0px;
+  top: 7px;
+  left: 8px;
+  height: 15px;
+  width:7px;
+  transform: rotateZ(45deg);
+}
+
+
+
+.add:hover{
+  animation: size 0.5s ease-in 1 ;
+  
+}
+
+@keyframes size{
+  0%{
+     
+     scale: 1 1;
+    
+  }
+  50%{
+    
+    scale: 0.98 0.98;
+
+  }
+  100%{
+   scale: 1 1;
+  }
+}
+

@@ -1,0 +1,38 @@
+.cont{
+    width: 80vw;
+    height: 80vh;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 35px;
+    cursor: default;
+    z-index: 11;
+}
+.cont h3{
+    word-spacing: 0.1cm;
+}
+.cont h3 span:nth-child(1){
+    font-size: 1.5em;
+    word-spacing: 0.1cm;
+    color: #ffab00;
+    font-weight: 500;
+}
+.cont h3 span:nth-child(2){
+    font-size: 1.9em;
+    word-spacing: 0.3cm;
+    color: #fe413d;
+   
+    font-family: 'Preahvihear', sans-serif;
+    transition: all 0.5s; 
+}
+.cont p{
+    text-transform: capitalize;
+}
+.cont p::first-letter{
+  color: orange;
+  font-size: 1.5em;
+}
+
