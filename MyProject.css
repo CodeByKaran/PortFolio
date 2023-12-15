@@ -146,9 +146,15 @@
     .cont .row .box{
        min-width: calc(100%/2);
     }
+    .cont .row .box p {
+        opacity: 1 !important;
+    }
 }
 @media only screen and (max-width:400px) {
     .cont .row .box{
        min-width: calc(100%/1);
+    }
+        .cont .row .box p {
+        opacity: 1 !important;
     }
 }
