@@ -25,6 +25,7 @@
     height: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 ::-webkit-scrollbar{
@@ -41,7 +42,7 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
-   
+    scroll-snap-align: center;
 }
 .cont .row .box:last-child{
 
