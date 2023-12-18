@@ -43,7 +43,11 @@
     flex-direction: column;
    
 }
+.cont .row .box:last-child{
 
+  margin: 0px 0px 0px 9px;
+
+}
 
 .cont .row .box:nth-child(1) {
     background: url("./projectBg/calculator-notepad-top-view.jpg");
