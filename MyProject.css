@@ -83,7 +83,6 @@
 }
 
 .cont .row .box:nth-child(7){
-
  background: url("./projectBg/Nbase.jpg");
 
     background-position: center;
@@ -91,7 +90,6 @@
     background-size: cover;
 
     background-repeat: no-repeat;
-
 }
 
 .cont .row .box p {
