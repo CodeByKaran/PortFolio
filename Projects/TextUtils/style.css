@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-size: 15pt;
+    
+}
+.nav{
+  display: flex;
+  align-items: center;
+  padding: 5px ;
+  border-radius: 9px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #555EC1;
+
+
+}
+.menubtn{
+  position: relative;
+}
+.menubtn button{
+  
+  padding: 5px;
+   background: transparent;
+  border: none;
+  
+  border-radius: 3px;
+}
+.menubtn .list{
+  position: absolute;
+  top: 37.2px;
+  border-radius: 9px;
+  box-shadow: 1px 1px 6px gray;
+  width: 100vw;
+  left: -5px;
+  height: 0px;
+  overflow-y: hidden;
+  transition: 0.2s;
+ 
+}
+.menubtn .list li{
+  list-style: none;
+  padding: 8px 0px 8px 20px;
+  color: #DEE1FB;
+  border-bottom: 1px solid #ccc;
+  background: #8085BE;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+.title{
+  text-align: center;
+  margin-left: 23.5%;
+  
+  color: #0E1029;
+  text-shadow: 0px 0px 8px #3845C1;
+  font-family: monospace;
+}
+.outer{
+  background: #9A9DC4;
+  display: flex;
+  padding: 2px 5px 3px 4px;
+  border-radius: 25px;
+  width: 50px;
+  box-shadow: inset -1px -1px 2px dimgray;
+  transition: 0.4s ease-in-out;
+}
+.inner{
+  background: #585A74;
+  border-radius:25px;
+  width: 15px;
+  height: 15px;
+  transition: 0.2s ease-in-out;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+  padding: 9px;
+  
+}
+.box .inputarea textarea{
+  max-width: 95vw;
+  max-height: 250px;
+  min-height: 100px;
+  min-width: 40vw;
+  width: 85vw;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.box .inputarea textarea:focus{
+  outline: none;
+  border-color: black
+}
+.box .button{
+  padding: 4px 4px;
+}
+.box .button button{
+  padding: 9px 9px;
+  margin-left: 8px;
+  border: none;
+  background: #4343B6;
+  color: #F1F1FF;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+.box .button button:hover{
+  box-shadow: 0px 0px 2px 4px lightblue; 
+}
+.dark{
+  box-shadow: 0px 0px 3px #A6A9CB;
+}
+.para{
+  width: 90vw;
+  text-align: start;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  min-height: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  max-height: 300px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.height{
+  height: 35px !important;
+}
+
+.darkMode{
+  background: #122F5DC7;
+}
+
+.rotateCircle{
+  transform: translateX(25px);
+}

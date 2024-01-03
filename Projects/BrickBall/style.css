@@ -1,0 +1,29 @@
+body {
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    flex-direction: column;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+canvas{
+  background: black;
+}
+.btns{
+  text-align: center;
+}
+button{
+  padding: 12px 20px;
+  border: 1px solid black;
+  margin: 5px 6px;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  opacity: 0;
+  border-radius: 9px;
+}
