@@ -1,0 +1,68 @@
+body {
+    font-size: 15pt;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cont{
+  width: 95vw;
+  height: fit-content;
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+}
+.square{
+  width: calc(95vw/3); 
+  height: 130px;
+  border: 1px solid black;
+  border-right: none;
+  border-bottom: none;
+}
+.square:nth-child(3){
+  border-right: 1px solid black;
+}
+.square:nth-child(6){
+  border-right: 1px solid black;
+}
+.square:nth-child(9){
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.square:nth-child(7){
+  border-bottom: 1px solid black;
+}
+.square:nth-child(8){
+  border-bottom: 1px solid black;
+}
+
+.mole{
+  background: url("whac.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.whac_touch{
+  background: url("hit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h2{
+  min-height: 60px;
+  text-align: center;
+  font-family: monospace;
+  padding: 5px;
+}
+#btn{
+  margin: 9px auto;
+  padding: 9px 9px;
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 6px #ccc;
+  border-radius: 5px;
+}
