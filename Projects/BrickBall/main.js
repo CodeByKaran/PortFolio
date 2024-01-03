@@ -1,7 +1,7 @@
 const resetbtn = document.getElementById("reset")
 let board;
 board_height = 500;
-board_width = 410;
+board_width = 400;
 let ctx;
 
 let playerWidth = 60;
@@ -47,6 +47,8 @@ let levelCount=0;
 
 window.onload = () => {
   let a;
+  
+  
   board = document.getElementById("board");
   board.height = board_height;
   board.width = board_width;
@@ -149,8 +151,7 @@ function checkColide(xpos) {
 
 
 function movePlayer(e) {
-
-  
+  e.preventDefault();
 
   let moveRatio = e.touches[0].clientX
 
