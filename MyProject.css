@@ -120,6 +120,33 @@
     background-repeat: no-repeat;
 }
 
+.cont .row .box:nth-child(11){
+
+ background: url("./projectBg/LocalTime.png");
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+.cont .row .box:nth-child(12){
+
+ background: url("./projectBg/WhacAMole.png");
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+
 
 .cont .row .box p {
     font-family: 'PT Sans', sans-serif;
