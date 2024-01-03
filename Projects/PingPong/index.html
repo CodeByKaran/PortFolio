@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HIT THE BRICK</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="btnwrapper">
+    <button onclick="comp()" class="btn active">Vs Computer</button>
+    <button onclick="play()" class="btn">Vs Player</button>
+  </div>
+
+  <div class="cont">
+  <canvas id="board">
+  </canvas>
+  </div>
+  <div class="btns">
+   <button id="reset" onclick="reset()" disabled>Play Again</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
