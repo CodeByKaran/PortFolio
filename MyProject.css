@@ -209,7 +209,7 @@
 
 @media only screen and (max-width:550px) {
     .cont .row .box{
-       min-width: calc(100%/2);
+       min-width: calc(100%/1);
     }
     .cont .row .box p {
         opacity: 1 !important;
