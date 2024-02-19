@@ -197,7 +197,7 @@ function moveplayer1Paddle() {
 
 function movePlayer(e) {
   e.preventDefault();
-  let moveRatio = e.touches[0].clientX
+  let moveRatio = e.touches[0].clientX - 30
   let moveRatioy = e.touches[0].clientY
   
   if(movePlayer0){
